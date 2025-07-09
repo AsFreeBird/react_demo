@@ -1,0 +1,9 @@
+
+
+shif +alt +F 格式化代码
+
+//切换语言 
+
+打开你的文件
+在 VS Code 中按下 Ctrl + K，然后立刻按 M（先按 K 再按 M）
+会弹出语言选择列表，选择 JavaScript

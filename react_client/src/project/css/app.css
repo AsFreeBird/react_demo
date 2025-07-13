@@ -1,5 +1,25 @@
 
-
 .content{
     margin-top: 100px;
+}
+
+.navigation {
+    line-height: 50px;
+    margin: 0 10px;
+    font-weight: 400;
+}
+
+.table {
+    margin-top: 30px;
+}
+
+tr,
+th {
+    text-align: center;
+}
+
+.glyphicon::before{
+    position: relative;
+    top: 2px;
+    margin-right: 10px;
 }

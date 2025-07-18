@@ -19,11 +19,17 @@ const Container = styled.div`
 `;
 
 const Grid = styled.div`
-    display: grid;
-    margin-top: 20px;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-`
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+`;
+//动态容器
+const DynamicContainer = styled.div`
+width:${props => props.width || '100%'};
+background-color: ${props =>props.bgColor || '#f8f9fa'};
+padding: 20px;
+`;
 
 export default function ContainerDemo() {
   return (
@@ -36,14 +42,57 @@ export default function ContainerDemo() {
         </p>
       </Container>
 
-        <Grid>
-            <div style={{ backgroundColor: '#e9ecef', padding: '20px', borderRadius: '5px' }}>Grid Item 1</div>
-            <div style={{ backgroundColor: '#e9ecef', padding: '20px', borderRadius: '5px' }}>Grid Item 2</div>
-            <div style={{ backgroundColor: '#e9ecef', padding: '20px', borderRadius: '5px' }}>Grid Item 3</div>
-            <div style={{ backgroundColor: '#e9ecef', padding: '20px', borderRadius: '5px' }}>Grid Item 4</div>
-            <div style={{ backgroundColor: '#e9ecef', padding: '20px', borderRadius: '5px' }}>Grid Item 5</div>
-        </Grid>
-
+      <Grid>
+        <div
+          style={{
+            backgroundColor: "#e9ecef",
+            padding: "20px",
+            borderRadius: "5px",
+          }}
+        >
+          Grid Item 1
+        </div>
+        <div
+          style={{
+            backgroundColor: "#e9ecef",
+            padding: "20px",
+            borderRadius: "5px",
+          }}
+        >
+          Grid Item 2
+        </div>
+        <div
+          style={{
+            backgroundColor: "#e9ecef",
+            padding: "20px",
+            borderRadius: "5px",
+          }}
+        >
+          Grid Item 3
+        </div>
+        <div
+          style={{
+            backgroundColor: "#e9ecef",
+            padding: "20px",
+            borderRadius: "5px",
+          }}
+        >
+          Grid Item 4
+        </div>
+        <div
+          style={{
+            backgroundColor: "#e9ecef",
+            padding: "20px",
+            borderRadius: "5px",
+          }}
+        >
+          Grid Item 5
+        </div>
+      </Grid>
+      <DynamicContainer width="40%" bgColor="#407ccaff">
+        <h2>动态容器</h2>
+        <p>这是一个动态宽度和背景色的容器。</p>
+      </DynamicContainer>
     </div>
   );
 }

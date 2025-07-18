@@ -5,10 +5,12 @@ import App from '../src/project/App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom'
 import ContainerDemo from './style-component/container_demo';
+import TitleDemo from './style-component/title-demo';
+import ButtonDemo from './style-component/button-demo';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <ContainerDemo />
+    <ButtonDemo />
   </BrowserRouter>
 );
 

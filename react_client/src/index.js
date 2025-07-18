@@ -4,11 +4,11 @@ import './index.css';
 import App from '../src/project/App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom'
-
+import ContainerDemo from './style-component/container_demo';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <App />
+    <ContainerDemo />
   </BrowserRouter>
 );
 
